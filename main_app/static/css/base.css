@@ -1,0 +1,94 @@
+:root {
+  font-size: 62.5%;
+
+  --nav-bg: antiquewhite;
+
+  --font-xtreme: 4.2rem;
+  --font-xxl: 3.6rem;
+  --font-xl: 2.4rem;
+  --font-l: 1.8rem;
+  --font-reg: 1.6rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*? =========== Header ============ */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-inline: 2rem;
+  background-color: var(--nav-bg);
+}
+
+header > h1 {
+  font-size: var(--font-xl);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  font-size: var(--font-reg);
+}
+
+/*? =========== End Header ============ */
+
+/*? =========== Main  ============ */
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.playlist-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  width: fit-content;
+}
+
+@media only screen and (min-width: 505px) {
+  .playlist-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .playlist-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .playlist-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .playlist-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 25rem;
+  outline: 1px solid red;
+}
+
+/*? =========== End Main ============ */
+
