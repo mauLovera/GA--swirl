@@ -43,22 +43,60 @@ header > h1 {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
   padding: 1rem;
+}
+
+.playlist-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 1100px;
+  height: 5rem;
+  outline: 1px solid red;
 }
 
 .playlist-container {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
-
   width: fit-content;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 25rem;
+  width: 25rem;
+  outline: 1px solid red;
+  padding: .8rem;
+}
+
+@media only screen and (min-width: 300px) {
+  .playlist-header {
+    width: calc(310px * 1.1);
+  }
+  .playlist {
+    height: 15rem;
+    width: 15rem;
+  }
 }
 
 @media only screen and (min-width: 505px) {
   .playlist-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .playlist-header {
+    width: calc(410px * 1.1);
+  }
+  .playlist {
+    height: 20rem;
+    width: 20rem;
   }
 }
 
@@ -66,11 +104,17 @@ main {
   .playlist-container {
     grid-template-columns: repeat(3, 1fr);
   }
+  .playlist-header {
+    width: calc(620px * 1.1);
+  }
 }
 
 @media only screen and (min-width: 1150px) {
   .playlist-container {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .playlist-header {
+    width: calc(830px * 1.1);
   }
 }
 
@@ -78,17 +122,16 @@ main {
   .playlist-container {
     grid-template-columns: repeat(5, 1fr);
   }
-}
-
-.playlist {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 25rem;
-  width: 25rem;
-  outline: 1px solid red;
+  .playlist-header {
+    width: calc(1040px * 1.1);
+  }
 }
 
 /*? =========== End Main ============ */
+
+/*? =========== General Classes ============ */
+
+.icon {
+  font-size: calc(var(--font-reg) * 1.2);
+}
 

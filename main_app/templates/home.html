@@ -1,46 +1,17 @@
 {% extends 'base.html' %} {% block head %}
 <title>Swirl</title>
 {% endblock head %} {% block content %}
+<div class='playlist-header'>
+  <i class="fa-solid fa-music icon"></i>
+  <h1>Playlists</h1>
+</div>
 <section class="playlist-container">
   {% for playlist in playlist %}
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
-  </div>
-  <div class='playlist'>
-    <h1>{{playlist.title}}</h1>
+  <div class="playlist">
+    <div class="playlist-top">
+      <h2>{{playlist.title}}</h2>
+      <p>by Mau</p>
+    </div>
   </div>
   {% endfor %}
 </section>
