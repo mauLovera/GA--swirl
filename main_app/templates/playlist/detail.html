@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% load static %} {% block head %}
-<script src="{% static 'js/app.js'%}" crossorigin="anonymous"></script>
+<script src="{% static 'js/app.js'%}" crossorigin="anonymous" defer></script>
 <title>Swirl</title>
 {% endblock head %} {% block content %}
 <section class="details-banner">
@@ -17,30 +17,35 @@
       </p>
     </div>
   </div>
-</section>
+</section>  
 <section class="details-main">
   <div class="details-main-header">
     <p class="th">#</p>
     <div>
       <p class="song-col-header th">Title</p>
-      <p class="song-col th">Album</p>
-      <p class="song-col th">Year</p>
+      <p class="song-col-album th">Album</p>
+      <p class="song-col-year th">Year</p>
     </div>
   </div>
+  <hr class="song-hr" />
   {% for song in playlist.song_set.all %}
-  <div class="details-song-container">
-    <i class="fa-solid fa-play invisible"></i>
-    <div class="details-song-counter"></div>
-    <div class="details-song-content">
+  <div class="details-song-container" id="song">
+    <i class="fa-solid fa-play" id="play"></i>
+    <a href="{{song.song_link}}" class='overlay-link'></a>
+    <div class="details-song-counter" id="count"></div>
+    <div class="details-song-content" id="content">
       <div class="details-song-header song-col-header">
         <h1>{{song.title}}</h1>
         <h2>{{song.artist}}</h2>
       </div>
-      <div class="details-song-subheader song-col">
+      <div class="details-song-album song-col-album">
         <h2>{{song.album}}</h2>
       </div>
-      <div class="details-song-subheader song-col">
+      <div class="details-song-year song-col-year">
         <h2>{{song.year}}</h2>
+      </div>
+      <div class="details-song-details" id="more">
+        <i class="fa-solid fa-ellipsis"></i>
       </div>
     </div>
   </div>
