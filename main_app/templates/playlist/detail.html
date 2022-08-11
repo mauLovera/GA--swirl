@@ -1,0 +1,49 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<script src="{% static 'js/app.js'%}" crossorigin="anonymous"></script>
+<title>Swirl</title>
+{% endblock head %} {% block content %}
+<section class="details-banner">
+  <div class="details-content-container">
+    <div class="details-image-container">
+      <div class="details-image">Image</div>
+    </div>
+    <div class="details-description-container">
+      <h1>{{playlist.title}}</h1>
+      <p>
+        {% if playlist.song_set.all|length == 1 %}
+        {{playlist.song_set.all|length}} Track | {% else %}
+        {{playlist.song_set.all|length}} Tracks | {% endif %}
+        <span class="italic">{{playlist.description}}</span>
+      </p>
+    </div>
+  </div>
+</section>
+<section class="details-main">
+  <div class="details-main-header">
+    <p class="th">#</p>
+    <div>
+      <p class="song-col-header th">Title</p>
+      <p class="song-col th">Album</p>
+      <p class="song-col th">Year</p>
+    </div>
+  </div>
+  {% for song in playlist.song_set.all %}
+  <div class="details-song-container">
+    <i class="fa-solid fa-play invisible"></i>
+    <div class="details-song-counter"></div>
+    <div class="details-song-content">
+      <div class="details-song-header song-col-header">
+        <h1>{{song.title}}</h1>
+        <h2>{{song.artist}}</h2>
+      </div>
+      <div class="details-song-subheader song-col">
+        <h2>{{song.album}}</h2>
+      </div>
+      <div class="details-song-subheader song-col">
+        <h2>{{song.year}}</h2>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endblock content %}

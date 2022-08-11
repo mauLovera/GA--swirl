@@ -20,6 +20,6 @@ class Song(models.Model):
     year = models.CharField(max_length=4)
     song_link = models.TextField(max_length=100)
     playlist = models.ForeignKey(Playlist, on_delete=models.CASCADE)
-    
+
     def __str__(self):
         return self.title
