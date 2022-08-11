@@ -7,6 +7,7 @@ from django.db import models
 class Playlist(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField(max_length=250)
+    image_url = models.URLField(max_length=200, default='')
     # owner
 
     def __str__(self):

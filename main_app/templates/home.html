@@ -8,7 +8,13 @@
 <section class="playlist-container">
   {% for playlist in playlist %}
   <a href="{% url 'playlist_detail' playlist.id %}">
-    <div class="playlist">
+    <div
+      class="playlist"
+      style="background-image: linear-gradient(0deg, rgba(0,0,0,0) 70%, rgba(0,0,0,0.6393907904958859) 100%), url({{playlist.image_url}})"
+    >
+      <div class="play-container">
+        <i class="fa-solid fa-play icon home-play"></i>
+      </div>
       <div class="playlist-top">
         <h2>{{playlist.title}}</h2>
         <p>by Mau</p>

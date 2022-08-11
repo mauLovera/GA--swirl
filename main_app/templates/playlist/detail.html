@@ -4,9 +4,10 @@
 {% endblock head %} {% block content %}
 <section class="details-banner">
   <div class="details-content-container">
-    <div class="details-image-container">
-      <div class="details-image">Image</div>
-    </div>
+    <div
+      class="details-image-container"
+      style="background-image: url({{playlist.image_url}})"
+    ></div>
     <div class="details-description-container">
       <h1>{{playlist.title}}</h1>
       <p>
@@ -17,7 +18,7 @@
       </p>
     </div>
   </div>
-</section>  
+</section>
 <section class="details-main">
   <div class="details-main-header">
     <p class="th">#</p>
@@ -31,7 +32,7 @@
   {% for song in playlist.song_set.all %}
   <div class="details-song-container" id="song">
     <i class="fa-solid fa-play" id="play"></i>
-    <a href="{{song.song_link}}" class='overlay-link'></a>
+    <a href="{{song.song_link}}" class="overlay-link"></a>
     <div class="details-song-counter" id="count"></div>
     <div class="details-song-content" id="content">
       <div class="details-song-header song-col-header">

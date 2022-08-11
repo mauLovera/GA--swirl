@@ -15,6 +15,8 @@ font-family: 'Playfair Display', serif; */
   --font-l: 1.8rem;
   --font-reg: 1.6rem;
 
+  --font-clr-light: whitesmoke;
+
   --font-serif: "DM Serif Display";
   --font-serif-2: "Playfair Display";
   --font-sans: "DM Sans";
@@ -70,7 +72,6 @@ main {
   width: 1300px;
   height: 5rem;
   margin-top: 1rem;
-  /* outline: 1px solid red; */
 }
 
 .playlist-container {
@@ -81,14 +82,49 @@ main {
 }
 
 .playlist {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   height: 25rem;
   width: 25rem;
-  outline: 1px solid red;
-  padding: 0.8rem;
+  padding: 0.5rem 0.8rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.playlist-top > * {
+  font-family: var(--font-sans);
+  color: var(--font-clr-light);
+}
+
+.playlist-top > h2 {
+  font-weight: 700;
+}
+
+.playlist:hover .play-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-container {
+  position: absolute;
+  outline: 1.5px solid white;
+  display: none;
+  
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: var(--font-clr-light);
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%,-50%); 
+}
+
+.home-play {
+  
 }
 
 /** =========== End Home ============ */
@@ -121,6 +157,8 @@ main {
   height: 30rem;
   width: 30rem;
   background-color: whitesmoke;
+  background-position: center;
+  background-size: cover;
   cursor: pointer;
 }
 
