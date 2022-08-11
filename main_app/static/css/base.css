@@ -78,6 +78,8 @@ main {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -214,6 +216,8 @@ main {
   display: flex;
   align-items: center;
   gap: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding-inline: 2rem;
   border-radius: 6px;
