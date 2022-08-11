@@ -5,7 +5,7 @@ from django.db import models
 
 class Playlist(models.Model):
     title = models.CharField(max_length=100)
-    description = models.TextField(max_length=250)
+    description = models.CharField(max_length=100)
     image_url = models.URLField(max_length=200, default='')
     # owner
 
@@ -18,7 +18,7 @@ class Song(models.Model):
     artist = models.CharField(max_length=100)
     album = models.CharField(max_length=100)
     year = models.CharField(max_length=4)
-    song_link = models.TextField(max_length=100)
+    song_url = models.URLField(max_length=200, default='')
     playlist = models.ForeignKey(Playlist, on_delete=models.CASCADE)
 
     def __str__(self):

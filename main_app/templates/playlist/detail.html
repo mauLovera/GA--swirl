@@ -1,6 +1,5 @@
 {% extends 'base.html' %} {% load static %} {% block head %}
-<script src="{% static 'js/app.js'%}" crossorigin="anonymous" defer></script>
-<title>Swirl</title>
+<title>Swirl - {{playlist.title}}</title>
 {% endblock head %} {% block content %}
 <section class="details-banner">
   <div class="details-content-container">
@@ -15,6 +14,7 @@
         {{playlist.song_set.all|length}} Track | {% else %}
         {{playlist.song_set.all|length}} Tracks | {% endif %}
         <span class="italic">{{playlist.description}}</span>
+        | Created by: Mau
       </p>
     </div>
   </div>
@@ -52,4 +52,5 @@
   </div>
   {% endfor %}
 </section>
+<script src="{% static 'js/app.js'%}" crossorigin="anonymous" type='module'></script>
 {% endblock content %}

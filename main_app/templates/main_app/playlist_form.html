@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<title>Swirl - Add Playlist</title>
+{% endblock head %} {% block content %}
+
+<section class='create-main'>
+  <form action="" method="post">
+    {% csrf_token %} {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+{% endblock content %}
