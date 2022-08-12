@@ -28,6 +28,7 @@ body {
   align-items: center;
   font-family: var(--font-sans);
   background-color: var(--nav-bg);
+  overflow-x: hidden;
 }
 
 /*? =========== Header ============ */
@@ -64,6 +65,7 @@ main {
   align-items: center;
   gap: 1rem;
   width: 100%;
+  overflow-x: hidden;
 }
 
 /** =========== Home ============ */
@@ -118,7 +120,7 @@ main {
 
 .play-container {
   position: absolute;
-  outline: 1.5px solid white;
+  border: 1.5px solid white;
   display: none;
   
   width: 4rem;
@@ -154,6 +156,8 @@ main {
   display: flex;
   align-items: center;
   gap: 2rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 85%;
   /* background-color: rgb(185, 174, 161); */
