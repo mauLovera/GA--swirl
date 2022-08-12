@@ -8,10 +8,27 @@ Vibrant.from(pictureUrl)
   .getPalette()
   .then((palette) => {
     console.log(palette)
-    let darkRgb = palette.DarkMuted._rgb
-    let lightRgb = palette.LightMuted._rgb  
-    let darkRgbBG = `rgb(${darkRgb[0]} ${darkRgb[1]} ${darkRgb[2]})`
-    let lightRgbBG = `rgb(${lightRgb[0]} ${lightRgb[1]} ${lightRgb[2]})`
+    let darkRgb
+    let darkRgbBG
+    let lightRgb
+    let lightRgbBG
+    let lightVRgb
+    let lightVRgbBG
+
+    if (palette.DarkMuted) {
+      darkRgb = palette.DarkMuted._rgb
+      darkRgbBG = `rgb(${darkRgb[0]} ${darkRgb[1]} ${darkRgb[2]})`
+    }
+
+    if (palette.LightMuted) {
+      lightRgb = palette.LightMuted._rgb
+      lightRgbBG = `rgb(${lightRgb[0]} ${lightRgb[1]} ${lightRgb[2]})`
+    }
+
+    if (palette.LightVibrant) {
+      lightVRgb = palette.LightVibrant._rgb
+      lightVRgbBG = `rgb(${lightVRgb[0]} ${lightVRgb[1]} ${lightVRgb[2]})`
+    }
 
     let input = document.querySelectorAll("input")
     let link = document.querySelectorAll(".link")
@@ -80,7 +97,7 @@ Vibrant.from(pictureUrl)
       btn.forEach((button) => {
         button.style.background = darkRgbBG
       })
-    } else {
+    } else if (lightRgbBG !== null) {
       banner.style.background = lightRgbBG
       add.style.background = lightRgbBG
       addForm.forEach((form) => {
@@ -89,6 +106,16 @@ Vibrant.from(pictureUrl)
       })
       btn.forEach((button) => {
         button.style.background = lightRgbBG
+      })
+    } else {
+      banner.style.background = lightVRgbBG
+      add.style.background = lightVRgbBG
+      addForm.forEach((form) => {
+        form.style.color = lightVRgbBG
+        form.style.borderColor = lightVRgbBG
+      })
+      btn.forEach((button) => {
+        button.style.background = lightVRgbBG
       })
     }
   })
