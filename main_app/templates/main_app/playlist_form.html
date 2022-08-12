@@ -7,11 +7,28 @@
 <section class="create-main">
   <form action="" method="post" class="create-form-container">
     {% csrf_token %} {{ form.as_p }}
+    <small
+      >Image link should come from image hosting site like
+      <a href="https://www.unsplash.com" style="text-decoration: underline"
+        >Unsplash</a
+      >
+      or
+      <a href="https://www.imgur.com" style="text-decoration: underline">Imgur</a
+      >!</small
+    >
     <button type="submit">Submit</button>
     {% if playlist %}
     <p style="align-self: center">Or</p>
-    <a href="{% url 'playlist_delete' playlist.id %}" style='width: 100%; background-color: darkred; text-align: center; color: white;'>
-      <div style='width: 100%; padding: 1px 6px;'>Delete</div>
+    <a
+      href="{% url 'playlist_delete' playlist.id %}"
+      style="
+        width: 100%;
+        background-color: darkred;
+        text-align: center;
+        color: white;
+      "
+    >
+      <div style="width: 100%; padding: 1px 6px">Delete</div>
     </a>
     {% endif %}
   </form>
