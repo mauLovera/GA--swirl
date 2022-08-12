@@ -16,8 +16,10 @@
         {{playlist.song_set.all|length}} Track | {% else %}
         {{playlist.song_set.all|length}} Tracks | {% endif %}
         <span class="italic">{{playlist.description}}</span>
-        | Created by: {{playlist.user}} | {% if playlist.user == request.user %}
-        <a href="{% url 'playlist_update' playlist.id %}"> Edit</a> |
+        | Created by: {{playlist.user}} {% if playlist.user == request.user %}
+        <br>
+        <br>
+        <a href="{% url 'playlist_update' playlist.id %}">Edit</a> |
         <a href=""> Delete </a>
         {% endif %}
       </p>
@@ -35,7 +37,7 @@
   </div>
   <hr class="song-hr" />
   {% for song in playlist.song_set.all %}
-  <div class="details-song-container" id="song">
+  <div class="details-song-container song" id="song">
     <i class="fa-solid fa-play" id="play"></i>
     <a href="{{song.song_link}}" class="overlay-link"></a>
     <div class="details-song-counter" id="count"></div>
