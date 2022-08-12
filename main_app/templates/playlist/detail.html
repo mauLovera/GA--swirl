@@ -38,7 +38,7 @@
   {% for song in playlist.song_set.all %}
   <div class="details-song-container song" id="song">
     <i class="fa-solid fa-play" id="play"></i>
-    <a href="{{song.song_link}}" class="overlay-link"></a>
+    <a href="{{song.song_url}}" class="overlay-link"></a>
     <div class="details-song-counter" id="count"></div>
     <div class="details-song-content" id="content">
       <div class="details-song-header song-col-header">

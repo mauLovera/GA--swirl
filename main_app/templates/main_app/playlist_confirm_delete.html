@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% load static %} {% block head %}
+b{% extends 'base.html' %} {% load static %} {% block head %}
 <title>Swirl - Delete {{ playlist.title}}</title>
 {% endblock head %} {% block content %}
 
@@ -6,7 +6,9 @@
   <form action="" method="POST" class="create-form-container">
     <h1>Are you sure you want to delete playlist: {{playlist.title}}?</h1>
     {% csrf_token %}
-    <button type="submit">Submit</button>
+    <button type="submit" style='width: 100%; background-color: darkred; text-align: center; color: white;'>
+      <div style='width: 100%; padding: 1px 6px;'>Delete</div>
+    </button>
     <a href="{% url 'playlist_detail' playlist.id %}">Cancel</a>
   </form>
 </section>
