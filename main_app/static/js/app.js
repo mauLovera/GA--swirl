@@ -9,7 +9,7 @@ Vibrant.from(pictureUrl)
   .then((palette) => {
     console.log(palette)
     let darkRgb = palette.DarkMuted._rgb
-    let lightRgb = palette.LightMuted._rgb
+    let lightRgb = palette.LightMuted._rgb  
     let darkRgbBG = `rgb(${darkRgb[0]} ${darkRgb[1]} ${darkRgb[2]})`
     let lightRgbBG = `rgb(${lightRgb[0]} ${lightRgb[1]} ${lightRgb[2]})`
 
@@ -24,9 +24,11 @@ Vibrant.from(pictureUrl)
     let btn = document.querySelectorAll(".btn")
     let editButton = document.querySelectorAll(".details-song-details")
 
-    add.addEventListener("click", () => {
-      modal.classList.toggle("invisible")
-    })
+    if (add) {
+      add.addEventListener("click", () => {
+        modal.classList.toggle("invisible")
+      })
+    }
 
     song.forEach((selectedSong) => {
       selectedSong.addEventListener("mouseover", () => {
