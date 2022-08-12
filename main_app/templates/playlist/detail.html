@@ -57,11 +57,13 @@
     </div>
   </div>
   {% endfor %}
+  {% if playlist.user == request.user %}
   <div class="details-add-song-container">
     <div class="details-add-song-button">
       <i class="fa-solid fa-plus"></i> Add Song
     </div>
   </div>
+  {% endif %}
   <section class="details-add-song-modal invisible">
     <form
       action="{% url 'add_song' playlist.id %}"
