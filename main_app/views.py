@@ -61,10 +61,9 @@ class PlaylistCreate(LoginRequiredMixin, CreateView):
 
 class PlaylistUpdate(LoginRequiredMixin, UpdateView):
     model = Playlist
-    fields = '__all__'
+    fields = ['title', 'description', 'image_url']
 
 
 class PlaylistDelete(LoginRequiredMixin, DeleteView):
     model = Playlist
-    fields = '__all__'
-    sucess_url = '/'
+    success_url = '/'

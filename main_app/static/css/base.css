@@ -400,7 +400,7 @@ h2 {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(240, 248, 255, 0.244);
+  background-color: rgba(240, 248, 255, 0.667);
   z-index: 100;
 }
 
@@ -413,7 +413,6 @@ h2 {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(240, 248, 255, 0.244);
   z-index: 100;
 }
 
@@ -422,11 +421,13 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-  color: white;
+  background-color: whitesmoke;
+  /* border: 2px solid transparent; */
+  border-radius: 6px;
   justify-content: space-between;
-  height: 30rem;
+  height: 35rem;
   width: 30rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .details-add-song-form > p {
@@ -442,13 +443,16 @@ h2 {
   width: 100%;
 }
 
+.details-edit-button {
+  border-bottom: 1px solid whitesmoke;
+}
+
 .details-submit-song-button {
   font-size: calc(var(--font-reg) * .8);
   border: 2px solid whitesmoke;
   border-radius: 3rem;
   padding: .5rem 2rem;
   background-color: whitesmoke;
-  color: black;
   align-self: center;
   cursor: pointer;
   z-index: 1000;
@@ -468,16 +472,18 @@ h2 {
 
 .details-add-song-form > p > label {
   font-size: calc(var(--font-reg) * .8);
-  width: 30%;
+  width: 25%;
 }
 
 .details-add-song-form > p > input {
   font-size: calc(var(--font-reg) * .8);
-  background-color: transparent;
+  background-color: white;
   border: 0;
-  border-bottom: 2px solid whitesmoke;
+  border-radius: 6px;
+  padding: .5rem 1rem;
+  border: 1px solid transparent;
   flex-grow: 1;
-  color: var(--font-clr-light);
+  color: inherit;
 }
 
 .details-song-details:hover {
@@ -604,10 +610,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 45rem;
+  height: 60rem;
 
   width: 100%;
-  outline: 1px solid red;
 }
 
 .create-form-container {
@@ -615,9 +620,8 @@ h2 {
   gap: 2rem;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  height: 70%;
-  width: 70%;
+  height: 25rem;
+  width: 25rem;
 }
 
 .create-form-container > p {
@@ -702,4 +706,8 @@ h2 {
 
 .link:hover {
   border-color: black;
+}
+
+.btn {
+  color: whitesmoke;
 }

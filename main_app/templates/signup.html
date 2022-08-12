@@ -1,18 +1,14 @@
 {% extends 'base.html' %} {% block head %}
 <title>Sign Up - Swirl</title>
 {% endblock head %} {% block content %}
-<div class="playlist-header">
-  <i class="fa-solid fa-music icon"></i>
-  <h1>Sign Up</h1>
-</div>
-<section class="signup-contianer">
-  <form action="" method="post" class="login">
+<section class="create-main">
+  <form action="" method="post" class="create-form-container">
     <h1>Welcome!</h1>
     <p style='color: red'>{{ error_message }}</p>
     {% csrf_token %}
     {{ form.as_p }}
     <input type="hidden" name="next" value="{{ next }}">
-    <button type="submit" class="btn submit">Sign Up</button>
+    <button type="submit" class="">Sign Up</button>
   </form>
 </section>
 {% endblock content %}

@@ -2,10 +2,12 @@
 <title>Swirl - Delete {{ playlist.title}}</title>
 {% endblock head %} {% block content %}
 
-<section class='create-main'>
-  <form action="" method="post" class='create-form-container'>
-    {% csrf_token %} {{ form.as_p }}
+<section class="create-main">
+  <form action="" method="POST" class="create-form-container">
+    <h1>Are you sure you want to delete playlist: {{playlist.title}}?</h1>
+    {% csrf_token %}
     <button type="submit">Submit</button>
+    <a href="{% url 'playlist_detail' playlist.id %}">Cancel</a>
   </form>
 </section>
 

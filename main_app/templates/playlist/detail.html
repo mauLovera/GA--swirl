@@ -19,8 +19,7 @@
         | Created by: {{playlist.user}} {% if playlist.user == request.user %}
         <br>
         <br>
-        <a href="{% url 'playlist_update' playlist.id %}">Edit</a> |
-        <a href=""> Delete </a>
+        <a href="{% url 'playlist_update' playlist.id %}" class='details-edit-button'>Edit</a>
         {% endif %}
       </p>
     </div>
@@ -71,10 +70,10 @@
     >
       {% csrf_token %} {{ song_form.as_p }}
       <div class="details-buttons-container">
-        <button type="submit" class="details-submit-song-button">
+        <button type="submit" class="details-submit-song-button btn">
           Add Song
         </button>
-        <button type="button" class="details-cancel-song-button">Cancel</button>
+        <button type="button" class="details-cancel-song-button btn">Cancel</button>
       </div>
     </form>
   </section>
