@@ -1,11 +1,9 @@
 {% extends 'base.html' %} {% load static %} {% block head %}
-<title>
-  Swirl - {% if playlist %} Edit {% else %} Add {% endif %} Playlist
-</title>
+<title>Swirl - Delete {{ playlist.title}}</title>
 {% endblock head %} {% block content %}
 
-<section class="create-main">
-  <form action="" method="post" class="create-form-container">
+<section class='create-main'>
+  <form action="" method="post" class='create-form-container'>
     {% csrf_token %} {{ form.as_p }}
     <button type="submit">Submit</button>
   </form>

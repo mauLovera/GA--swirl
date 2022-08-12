@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {% block head %}
+<title>Login - Swirl</title>
+{% endblock head %} {% block content %}
+<div class="playlist-header">
+  <i class="fa-solid fa-music icon"></i>
+  <h1>Login</h1>
+</div>
+<section class="login-contianer">
+  <form action="{% url 'login' %}" method="post" class="login">
+    <h1>Welcome Back!</h1>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="hidden" name="next" value="{{ next }}">
+    <button type="submit" class="btn submit">Login</button>
+  </form>
+</section>
+{% endblock content %}
