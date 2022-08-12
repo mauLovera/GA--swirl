@@ -52,7 +52,7 @@ header > h1 {
 .nav-links {
   display: flex;
   gap: 1rem;
-  font-size: calc(var(--font-reg) * .9);
+  font-size: calc(var(--font-reg) * 0.9);
 }
 
 /*? =========== End Header ============ */
@@ -122,18 +122,17 @@ main {
   position: absolute;
   border: 1.5px solid white;
   display: none;
-  
+
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   color: var(--font-clr-light);
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%,-50%); 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .home-play {
-  
 }
 
 /** =========== End Home ============ */
@@ -390,7 +389,7 @@ h2 {
 
 .details-add-song-button {
   border-radius: 3rem;
-  font-size: calc(var(--font-reg) * .6);
+  font-size: calc(var(--font-reg) * 0.6);
   padding: 1rem 3rem;
   color: whitesmoke;
   cursor: pointer;
@@ -453,10 +452,10 @@ h2 {
 }
 
 .details-submit-song-button {
-  font-size: calc(var(--font-reg) * .8);
+  font-size: calc(var(--font-reg) * 0.8);
   border: 2px solid whitesmoke;
   border-radius: 3rem;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: whitesmoke;
   align-self: center;
   cursor: pointer;
@@ -464,10 +463,10 @@ h2 {
 }
 
 .details-cancel-song-button {
-  font-size: calc(var(--font-reg) * .8);
+  font-size: calc(var(--font-reg) * 0.8);
   border: 2px solid whitesmoke;
   border-radius: 3rem;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: whitesmoke;
   color: black;
   align-self: center;
@@ -476,16 +475,16 @@ h2 {
 }
 
 .details-add-song-form > p > label {
-  font-size: calc(var(--font-reg) * .8);
+  font-size: calc(var(--font-reg) * 0.8);
   width: 25%;
 }
 
 .details-add-song-form > p > input {
-  font-size: calc(var(--font-reg) * .8);
+  font-size: calc(var(--font-reg) * 0.8);
   background-color: white;
   border: 0;
   border-radius: 6px;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: 1px solid transparent;
   flex-grow: 1;
   color: inherit;
@@ -596,14 +595,12 @@ h2 {
     width: 25rem;
   }
 
-
   .details-description-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     width: 25rem;
     line-height: 1.25;
-
   }
 }
 
@@ -645,7 +642,7 @@ h2 {
     width: 14rem;
   }
   .nav-links {
-    font-size: calc(var(--font-reg) * .8);
+    font-size: calc(var(--font-reg) * 0.8);
   }
 }
 
@@ -715,4 +712,17 @@ h2 {
 
 .btn {
   color: whitesmoke;
+}
+
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+  .playlist-header {
+    width: calc(352px);
+  }
+  .playlist {
+    height: 17rem;
+    width: 17rem;
+  }
+  .nav-links {
+    font-size: calc(var(--font-reg) * 0.8);
+  }
 }
