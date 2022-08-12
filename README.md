@@ -14,3 +14,9 @@ https://swirl-mauricio-lovera.herokuapp.com/
 
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
+# Icebox
+
+- Unsplash API for generating random playlist images if user does not provide one
+- Adding genres to playlist that can be filtered and searched through
+- Youtube lookup API to improve UX
+- Increased support for mobile responsiveness
