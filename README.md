@@ -1,12 +1,10 @@
-<h1 align='center'> Swirl - 
-  <small>
-    <a href='https://swirl-mauricio-lovera.herokuapp.com/'>Deployment Link</a>
-  </small> 
-</h1>
+<h1 align='center'> 👋 Welcome to Swirl 👋 </h1>
 
 ## **Description** 📃
 
 Swirl is a **playlist creating platform** which allows users to create and share playlists with other users!
+
+<a href='https://swirl-mauricio-lovera.herokuapp.com/'>Deployment Link</a> 
 
 ## **Features** 😲
 
@@ -16,11 +14,11 @@ Swirl is a **playlist creating platform** which allows users to create and share
 
 ## **Icebox** 🧊
 
-- Incorportate Unsplash API to assign a random playlist photo if user does not provide one. 
-- Add genres to playlist that can be filtered through and searched for.
-- Incorporate YouTube API to improve add song UX.
-- Increase support for mobile responsiveness.
-- Add selective collaboration playlist feature with change log.  
+- [] Incorportate Unsplash API to assign a random playlist photo if user does not provide one. 
+- [] Add genres to playlist that can be filtered through and searched for.
+- [] Incorporate YouTube API to improve add song UX.
+- [] Increase support for mobile responsiveness.
+- [] Add selective collaboration playlist feature with change log.  
 
 ## **Technologies Used** ⚙
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) 
