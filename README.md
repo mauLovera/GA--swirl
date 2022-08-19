@@ -1,4 +1,4 @@
-# 👋 Welcome to **Swirl!** 👋
+# **Swirl** 
 
 ## **Deployment Link**
 **https://swirl-mauricio-lovera.herokuapp.com/**
