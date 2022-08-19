@@ -1,4 +1,4 @@
-<h1 align='center'>Welcome to Swirl!</h1>
+# Welcome to Swirl! 👋
 
 ## **Deployment Link** 🔗
 **https://swirl-mauricio-lovera.herokuapp.com/**
@@ -22,7 +22,7 @@ Swirl is a playlist creating platform which allows users to create and share pla
 
 - Incorportate Unsplash API to assign a random playlist photo if user does not provide one. 
 - Add genres to playlist that can be filtered through and searched for.
-- Incorporate YouTube API to improve song add UX.
+- Incorporate YouTube API to improve add song UX.
 - Increase support for mobile responsiveness.
 - Add selective collaboration playlist feature with change log.  
 
