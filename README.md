@@ -1,5 +1,3 @@
-<center>
-
 # 👋 Welcome to **Swirl!** 👋
  
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) 
@@ -9,19 +7,16 @@
 
 **https://swirl-mauricio-lovera.herokuapp.com/**
 
-</center>
-
 ## **Description** 📃
----
+
 Swirl is a playlist creating platform which allows users to create and share playlists with other users!
 
 ## **Features** 😲
----
+
 - User login, authentication, and signout.
 - Content-aware color rendering through [Vibrant.js](https://github.com/Vibrant-Colors/node-vibrant)
 
 ## **Icebox** 🧊
----
 
 - Incorportate Unsplash API to assign a random playlist photo if user does not provide one. 
 - Add genres to playlist that can be filtered through and searched for.
