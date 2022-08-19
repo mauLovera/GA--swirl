@@ -7,14 +7,20 @@
 
 **https://swirl-mauricio-lovera.herokuapp.com/**
 
+---
+
 ## **Description** 📃
 
 Swirl is a playlist creating platform which allows users to create and share playlists with other users!
+
+---
 
 ## **Features** 😲
 
 - User login, authentication, and signout.
 - Content-aware color rendering through [Vibrant.js](https://github.com/Vibrant-Colors/node-vibrant)
+
+---
 
 ## **Icebox** 🧊
 
@@ -23,6 +29,7 @@ Swirl is a playlist creating platform which allows users to create and share pla
 - Incorporate YouTube API to improve song add UX.
 - Increase support for mobile responsiveness. 
 
+---
 
 ## **Screenshots** 📷
 
