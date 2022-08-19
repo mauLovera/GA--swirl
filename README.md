@@ -1,13 +1,13 @@
 <h1 style='text-align: center;'> 👋 Welcome to Swirl! 👋 </h1>
 
-<p style='display: flex; justify-content: center; gap: 2rem;'>
+<p align='center' >
   <img alt='Django' src='https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white'>
   <img alt='PostgreSQL' src='https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white'>
   <img alt='Docker' src='https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white'>
   <img alt='JavaScript' src='https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E'>
 </p>
 
-<p style='text-align: center;'>
+<p align='center' >
   <a href='https://swirl-mauricio-lovera.herokuapp.com/'>Deployment Link!</a>
 </p>
 
