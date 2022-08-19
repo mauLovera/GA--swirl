@@ -1,4 +1,4 @@
-<h1 style='text-align: center;'> 👋 Welcome to Swirl! 👋 </h1>
+<h1 align='center'> 👋 Welcome to Swirl! 👋 </h1>
 
 <p align='center' >
   <img alt='Django' src='https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white'>
