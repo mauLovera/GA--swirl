@@ -1,10 +1,8 @@
-# **Swirl**
+# **Swirl** - **[Deployment Link](https://swirl-mauricio-lovera.herokuapp.com/)**
 
 ## **Description** 📃
 
 Swirl is a **playlist creating platform** which allows users to create and share playlists with other users!
-
-Deployment - https://swirl-mauricio-lovera.herokuapp.com/
 
 ## **Features** 😲
 
